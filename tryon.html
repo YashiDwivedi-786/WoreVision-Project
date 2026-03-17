@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtual Try-On</title>
+<link rel="stylesheet" href="css/tryon.css">
+</head>
+
+<body>
+<div class="tryon-container">
+
+    <h1>Virtual Glasses Try-On</h1>
+    <p class="tryon-sub">
+        See how glasses look on your face in real time
+    </p>
+    
+    
+    <video id="camera" autoplay width="300"></video>
+    <p class="hint">Make sure your face is clearly visible</p>
+    <div class="tryon-controls">
+        <button onclick="startCamera()">Start Try-On</button>
+        <button onclick="stopCamera()">Stop Camera</button>
+    </div>
+</div>
+<br><br>
+
+
+
+<script src="js/tryon.js"></script>
+
+</body>
+</html>
