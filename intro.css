@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background: #ffffff;
+    overflow:hidden;
+}
+
+.intro-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro-logo {
+    width: 120px;
+    animation: zoomFade 3.0s ease-in-out;
+}
+
+@keyframes zoomFade {
+    
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    30%{
+       
+        opacity: 1;
+    }
+    
+    80% {
+        transform: scale(1.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
