@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eyewear Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="images/Logo.jpeg">
+            <span>WoreVision</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="./home.html">Home</a>
+            <a href="cart.html">Cart(<span id="cartCount">0</span>)</a>
+            <a href="#">About Us</a> 
+            <a href="#">Contact</a>
+        </nav>
+
+
+
+    </header>
+
+    <div class="hero">
+        <h1>Find Your Perfect Frame</h1>
+        <p class="hero-sub">Premium eyewear designed for comfort and clarity</p>
+        <div class="search-box">
+            <input type="text" id="searchBar" placeholder="Search glasses....">
+        </div>
+    </div>
+
+    <h2 class="section-title">Trending Frames</h2>
+
+    <div class="products">
+<!-- https://s.alicdn.com/@sc04/kf/H9464212c987648f187492c7a63630afap.jpg?avif=close&webp=close -->
+        <div class="card">
+            <img src="images/trending 1.jpg">
+            <h3>Classic Round</h3>
+            <p class="price">₹1999</p>
+            <button onclick="addToCart('Classic Round Frame',1999,'images/trending 1.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images/trending 2.jpg">
+            <h3>Modern Square</h3>
+            <p class="price">₹2499</p>
+            <button onclick="addToCart('Modern Square Frame',1999,'images/trending 2.jpg')"> Add to Cart
+            </button>
+            <!-- <button>Add to Cart</button> -->
+        </div>
+
+        <div class="card">
+            <img src="images/trending 3.jpg">
+            <h3>Metal Frame</h3>
+            <p class="price">₹2799</p>
+            <button onclick="addToCart('Metal Frame',1999,'images/trending 3.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+    <h2 class="section-title">Sunglasses</h2>
+    <div class="products">
+
+        <div class="card">
+            <img src="images/sunglasses 1.jpg">
+            <h3>Black Aviator</h3>
+            <p class="price">₹2199</p>
+            <button onclick="addToCart('Black Aviator Sunglasses',2199,'images/sunglasses 1.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images/sunglasses 2.jpg">
+            <h3>Retro Square</h3>
+            <p class="price">₹1999</p>
+            <button onclick="addToCart('Retro Square Sunglasses',1999,'images/sunglasses 2.jpg')">
+                Add to cart
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="images/sunglasses 3.jpg">
+            <h3>Gradient Lens</h3>
+            <p class="price">₹2499</p>
+            <button onclick="addToCart('Gradient Sunglasses',2499,'images/sunglasses 3.jpg')">
+                Add to cart
+            </button>
+        </div>
+        </div>
+
+        <h2 class="section-title">Lenses</h2>
+
+<div class="products">
+
+    <div class="card">
+        <img src="images/lenses 1.jpg">
+        <h3>Blue Light Lens</h3>
+        <p class="price">₹999</p>
+        <button onclick="addToCart('Blue Light Lens',999,'images/lenses 1.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="images/lenses 2.jpg">
+        <h3>Gem pink lenses</h3>
+        <p class="price">₹999</p>
+        <button onclick="addToCart('images/lenses 2.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+<h2 class="section-title">Trending Accessories & Frames</h2>
+
+<div class="products">
+
+  <div class="card">
+    <img src="images/accessories 4.jpg">
+    <h3>Classic Frame</h3>
+    <p class="price">₹1999</p>
+    <button onclick="addToCart('Classic Round Frame',1999,'images/accessories 4.jpg')">Add to Cart</button>
+  </div>
+
+  <div class="card">
+    <img src="images/accessories 1.jpg">
+    <h3>Premium Frame</h3>
+    <p class="price">₹2499</p>
+    <button onclick="addToCart('Premium Aviator Frame',2499,'images/accessories 1.jpg')">Add to Cart</button>
+  </div>
+<!-- https://www.amconlabs.com/customers/images/ar4052_small.jpg -->
+  <div class="card">
+    <img src="images/accessories 2.jpg">
+    <h3>Lens Cleaning Kit</h3>
+    <p class="price">₹399</p>
+    <button onclick="addToCart('Lens Cleaning Kit',399,'images/accessories 2.jpg')">Add to Cart</button>
+  </div>
+
+<!-- https://images-cdn.ubuy.co.in/660a75b251346047e5171a48-buleens-glasses-chain-for-women-pearl.jpg -->
+  <div class="card">
+    <img src="images/accessories 3.jpg">
+    <h3>Stylish Eyeglass Chain</h3>
+    <p class="price">₹299</p>
+    <button onclick="addToCart('Eyeglass Chain',299,'images/accessories 3.jpg')">Add to Cart</button>
+  </div>
+
+</div>
+
+        <div class="tryon">
+
+            <h2>Virtual Try-On</h2>
+
+            <p>Use your camera to see how the glasses look on you.</p>
+
+            <button onclick="window.location.href='tryon.html'">
+                Try Glasses Now
+            </button>
+
+        </div>
+
+        <footer>
+
+            <p>© 2026 VisionWear Eyewear Store</p>
+
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/tryon.js"></script>
+</body>
+
+</html>
