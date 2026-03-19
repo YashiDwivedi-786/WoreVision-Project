@@ -76,7 +76,10 @@ header {
     
 }
 #searchBar{
-    padding: 20px 30px
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
 }
 
 /* background:url('https://images.unsplash.com/photo-1511499767150-a48a237f0083') center/cover; */
