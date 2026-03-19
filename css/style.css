@@ -77,7 +77,7 @@ header {
 }
 #searchBar{
     padding-left: 15px;
-    border-radius: 30px;
+    border-radius: 30px !important;
     border: none;
     outline: none;
 }
@@ -158,8 +158,7 @@ background:rgba(0,0,0,0.4);
     opacity: 0.9;
     margin-top: 10px;
     color:#ddd;
-    /* margin-bottom: 25px; */
-    /* text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); */
+    
 }
 
 .section-title {
