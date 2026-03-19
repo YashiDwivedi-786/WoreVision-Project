@@ -63,7 +63,7 @@ header {
     position:relative;
     width: 520px;
     height: 48px;
-    padding: 0px 20p;
+    padding: 20px 30px;
     border: none;
     border-radius: 30px;
     background: #ffffff;
@@ -250,19 +250,3 @@ transition: 0.4s;
     transform: translateY(0);
 }
 
-/* .shop-btn {
-    margin-top: 15px;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;
-    background: #00b894;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.shop-btn:hover {
-    background: #019875;
-    transform: scale(1.05);
-} */
