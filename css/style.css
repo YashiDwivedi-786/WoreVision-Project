@@ -76,7 +76,7 @@ header {
     
 }
 #searchBar{
-    padding: 0 40px 0 30px;
+    padding-left: 15px;
     border-radius: 30px;
     border: none;
     outline: none;
