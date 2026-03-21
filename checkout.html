@@ -2,66 +2,42 @@
 <html>
 
 <head>
-<title>Checkout</title>
-<link rel="stylesheet" href="css/checkout.css">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 
 <body>
+    <h1 class="checkout-title">Checkout</h1>
+    <div class="checkout-container">
+        <h2>Shipping Details</h2>
+        <form id="checkoutForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Pincode" required>
+            <input type="text" placeholder="Phone Number" required>
 
-<h1 class="checkout-title">Checkout</h1>
+            <h2>Payment Method</h2>
+            <select required>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit/Debit Card</option>
+            </select>
 
-<div class="checkout-container">
+            <h2>Order Summary</h2>
+            <div class="summary-box">
+                <p>Subtotal: ₹<span id="subtotal">0</span></p>
+                <p>Shipping: <span id="shipping">Free</span></p>
+                <hr>
+                <h3>Total: ₹<span id="finalTotal">0</span></h3>
+            </div>
 
-<h2>Shipping Details</h2>
-
-<form id="checkoutForm">
-
-<input type="text" placeholder="Full Name" required>
-
-<input type="text" placeholder="Address" required>
-
-<input type="text" placeholder="City" required>
-
-<input type="text" placeholder="Pincode" required>
-
-<input type="text" placeholder="Phone Number" required>
-
-<h2>Payment Method</h2>
-
-<select required>
-
-<option>Cash on Delivery</option>
-
-<option>UPI</option>
-
-<option>Credit/Debit Card</option>
-
-</select>
-
-<h2>Order Summary</h2>
-
-<div class="summary-box">
-
-<p>Subtotal: ₹<span id="subtotal">0</span></p>
-
-<p>Shipping: <span id="shipping">Free</span></p>
-
-<hr>
-
-<h3>Total: ₹<span id="finalTotal">0</span></h3>
-
-</div>
-
-<button type="submit" class="place-order-btn">
-Place Order
-</button>
-
-</form>
-
-</div>
-
-<script src="js/checkout.js"></script>
-
+            <button type="submit" class="place-order-btn">
+                Place Order
+            </button>
+        </form>
+    </div>
+    <script src="js/checkout.js"></script>
 </body>
 
 </html>
