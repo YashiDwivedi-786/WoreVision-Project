@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>All Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <h2 class="section-title">All Products</h2>
+
+<div class="slider-wrapper">
+
+    <button class="slide-btn left" onclick="slideLeft(slider1)">❮</button>
+
+    <div class="slider" id="slider1">
+
+        <div class="card">
+            <a href="product.html?name=Classic Round&price=1999&image=images/trending 1.jpg&category=frames">
+                <img src="images/trending 1.jpg">
+            </a>
+            <h3>Classic Round</h3>
+            <p class="price">₹1999</p>
+            <button onclick="handleAddToCart(this,'Classic Round',1999,'images/trending 1.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Modern Square&price=2499&image=images/trending 2.jpg&category=frames">
+                <img src="images/trending 2.jpg">
+            </a>
+            <h3>Modern Square</h3>
+            <p class="price">₹2499</p>
+            <button onclick="handleAddToCart(this,'Modern Square',2499,'images/trending 2.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Metal Frame&price=2799&image=images/trending 3.jpg&category=frames">
+                <img src="images/trending 3.jpg">
+            </a>
+            <h3>Metal Frame</h3>
+            <p class="price">₹2799</p>
+            <button onclick="handleAddToCart(this,'Metal Frame',2799,'images/trending 3.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Modern Grey&price=2799&image=images/trending 4.jpg&category=frames">
+                <img src="images/eyeglasses4.jpg">
+            </a>
+            <h3>Modern Grey</h3>
+            <p class="price">₹2799</p>
+            <button onclick="handleAddToCart(this,'Modern Grey',2799,'images/eyeglasses4.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Beach Bliss Glasses&price=2499&image=images/trending 5.jpg&category=frames">
+                <img src="images/eyeglasses5.jpg">
+            </a>
+            <h3>Beach Bliss Glasses</h3>
+            <p class="price">₹2499</p>
+            <button onclick="handleAddToCart(this,'Beach Bliss Glasses',2499,'images/eyeglasses5.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Round Acetate Glasses&price=2699&image=images/trending 6.jpg&category=frames">
+                <img src="images/eyeglasses6.jpg">
+            </a>
+            <h3>Round Acetate Glasses</h3>
+            <p class="price">₹2699</p>
+            <button onclick="handleAddToCart(this,'Round Acetate Glasses',2699,'images/eyeglasses6.jpg')"> Add to Cart
+            </button>
+        </div>
+
+
+        <!-- Add more cards -->
+
+    </div>
+
+    <button class="slide-btn right" onclick="slideRight('slider1')">❯</button>
+
+</div>
+
+<h2 class="section-title">Sunglasses</h2>
+
+<div class="slider-wrapper">
+
+    <button class="slide-btn left" onclick="slideLeft('slider2')">❮</button>
+
+    <div class="slider" id="slider2">
+
+        <div class="card">
+            <a href="product.html?name=Black Aviator&price=1999&image=images/sunglasses 1.jpg&category=sunglasses">
+                <img src="images/sunglasses 1.jpg">
+            </a>
+            <h3>Black Aviator</h3>
+            <p class="price">₹1999</p>
+            <button onclick="handleAddToCart(this,'Black Aviator',1999,'images/sunglasses 1.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Retro Square&price=2499&image=images/sunglasses 2.jpg&category=sunglasses">
+                <img src="images/sunglasses 2.jpg">
+            </a>
+            <h3>Retro Square</h3>
+            <p class="price">₹2499</p>
+            <button onclick="handleAddToCart(this,'Retro Square Sunglasses',2499,'images/sunglasses 2.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Gradient Sunglasses&price=1999&image=images/sunglasses 3.jpg&category=sunglasses">
+                <img src="images/sunglasses 3.jpg">
+            </a>
+            <h3>Gradient Sunglasses</h3>
+            <p class="price">₹1999</p>
+            <button onclick="handleAddToCart(this,'Gradient Sunglasses',1999,'images/sunglasses 3.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Metallic Gradient&price=2499&image=images/sunglasses 4.jpg&category=sunglasses">
+                <img src="images/sunglasses 4.jpg">
+            </a>
+            <h3>Metallic Gradient</h3>
+            <p class="price">₹2499</p>
+            <button onclick="handleAddToCart(this,'Metallic Gradient',2499,'images/sunglasses 4.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Gentle Monster&price=2999&image=images/sunglasses 5.jpg&category=sunglasses">
+                <img src="images/sunglasses 5.jpg">
+            </a>
+            <h3>Gentle Monster</h3>
+            <p class="price">₹2999</p>
+            <button onclick="handleAddToCart(this,'Gentle Monster',2999,'images/sunglasses 5.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Gold Liner&price=2799&image=images/sunglasses 6.jpg&category=sunglasses">
+                <img src="images/sunglasses 6.jpg">
+            </a>
+            <h3>Gold Liner</h3>
+            <p class="price">₹2799</p>
+            <button onclick="handleAddToCart(this,'Gold Liner',2799,'images/sunglasses 6.jpg')"> Add to Cart
+            </button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Modern Black&price=1999&image=images/sunglasses 7.jpg&category=sunglasses">
+                <img src="images/sunglasses 7.jpg">
+            </a>
+            <h3>Modern Black</h3>
+            <p class="price">₹1999</p>
+            <button onclick="handleAddToCart(this,'Modern Black',1999,'images/sunglasses 7.jpg')"> Add to Cart
+            </button>
+        </div>
+
+
+        <!-- Add more cards -->
+
+    </div>
+
+    <button class="slide-btn right" onclick="slideRight('slider2')">❯</button>
+
+</div>
+
+<h2 class="section-title">Lenses</h2>
+
+<div class="slider-wrapper">
+
+    <button class="slide-btn left" onclick="slideLeft('slider3')">❮</button>
+
+    <div class="slider" id="slider3">
+
+        <div class="card">
+             <a
+                href="product.html?name=Blue Light Lens&price=799&image=images/lenses 1.jpg&category=lenses">
+                <img src="images/lenses 1.jpg">
+            </a>
+            <h3>Blue Light</h3>
+            <p class="price">₹799</p>
+             <button onclick="handleAddToCart('Blue Light Lens',799,'images/lenses 1.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+           <a
+                href="product.html?name=Sea Blue Lens&price=899&image=images/lenses 4.jpg&category=lenses">
+                <img src="images/lenses 4.jpg">
+            </a>
+            <h3>Sea Blue</h3>
+            <p class="price">₹899</p>
+             <button onclick="handleAddToCart('Sea Blue Lens',899,'images/lenses 4.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Gem Pink Lens&price=1299&image=images/lenses 2.jpg&category=lenses">
+                <img src="images/lenses 2.jpg">
+            </a>
+            <h3>Gem Pink</h3>
+            <p class="price">₹1299</p>
+             <button onclick="handleAddToCart('Gem Pink Lens',1299,'images/lenses 2.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Shell Grey Lens&price=1099&image=images/lenses 5.jpg&category=lenses">
+                <img src="images/lenses 5.jpg">
+            </a>
+            <h3>Shell Grey</h3>
+            <p class="price">₹1099</p>
+             <button onclick="handleAddToCart('Shell Grey',1099,'images/lenses 5.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Bright Green Lens&price=999&image=images/lenses 3.jpg&category=lenses">
+                <img src="images/lenses 3.jpg">
+            </a>
+            <h3>Bright Green</h3>
+            <p class="price">₹999</p>
+             <button onclick="handleAddToCart('Bright Green',999,'images/lenses 3.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Bright Brown Lens&price=999&image=images/lenses 6.jpg&category=lenses">
+                <img src="images/lenses 6.jpg">
+            </a>
+            <h3>Bright Brown</h3>
+            <p class="price">₹999</p>
+             <button onclick="handleAddToCart('Bright Brown',999,'images/lenses 6.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Selene Hazel Lens&price=1199&image=images/lenses 7.jpg&category=lenses">
+                <img src="images/lenses 7.jpg">
+            </a>
+            <h3>Selene Hazel</h3>
+            <p class="price">₹1199</p>
+            <button onclick="handleAddToCart('Selene Hazel',1199,'images/lenses 7.jpg')">Add to Cart</button>
+        </div>
+
+          </div>
+
+    <button class="slide-btn right" onclick="slideRight('slider3')">❯</button>
+
+</div>
+
+        <h2 class="section-title">Spectacle Cases</h2>
+
+<div class="slider-wrapper">
+
+    <button class="slide-btn left" onclick="slideLeft('slider4')">❮</button>
+
+    <div class="slider" id="slider4">
+
+        <div class="card">
+            <a
+                href="product.html?name=Blue Leather Case&price=449&image=images/cases 1.jpg&category=case">
+                <img src="images/cases 1.jpg">
+            </a>
+            <h3>Blue Leather Case</h3>
+            <p class="price">₹449</p>
+             <button onclick="handleAddToCart('Blue Leather',449,'images/cases 1.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Royal Leather Case&price=699&image=images/cases 2.jpg&category=case">
+                <img src="images/cases 2.jpg">
+            </a>
+            <h3>Royal Leather Case</h3>
+            <p class="price">₹699</p>
+            <button onclick="handleAddToCart('Royal Leather Case',699,'images/cases 2.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Galaxy Hard Cover Case&price=249&image=images/cases 3.jpg&category=case">
+                <img src="images/cases 3.jpg">
+            </a>
+            <h3>Galaxy Hard Cover Case</h3>
+            <p class="price">₹249</p>
+            <button onclick="handleAddToCart('Galaxy Hard Cover Case',249,'images/cases 3.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Double Folded Case&price=499&image=images/cases 4.jpg&category=case">
+                <img src="images/cases 4.jpg">
+            </a>
+            <h3>Double Folded Case</h3>
+            <p class="price">₹499</p>
+            <button onclick="handleAddToCart('Double Folded Case',499,'images/cases 4.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Sleek Case Combo&price=499&image=images/cases 5.jpg&category=case">
+                <img src="images/cases 5.jpg">
+            </a>
+            <h3>Sleek Case Combo</h3>
+            <p class="price">₹499</p>
+            <button onclick="handleAddToCart('Sleek Case Combo',499,'images/cases 5.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Blue&Black Pouch&price=299&image=images/cases 6.jpg&category=case">
+                <img src="images/cases 6.jpg">
+            </a>
+            <h3>Blue&Black Pouch </h3>
+            <p class="price">₹299</p>
+            <button onclick="handleAddToCart('Blue&Black Pouch',299,'images/cases 6.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a
+                href="product.html?name=Quality Case&price=299&image=images/cases 7.jpg&category=case">
+                <img src="images/cases 7.jpg">
+            </a>
+            <h3>Quality Case</h3>
+            <p class="price">₹299</p>
+            <button onclick="handleAddToCart('Quality Case',299,'images/cases 7.jpg')">Add to Cart</button>
+        </div>
+
+
+        <!-- Add more cards -->
+
+    </div>
+
+    <button class="slide-btn right" onclick="slideRight('slider4')">❯</button>
+
+</div>
+
+<h2 class="section-title">Accessories</h2>
+
+<div class="slider-wrapper">
+
+    <button class="slide-btn left" onclick="slideLeft('slider5')">❮</button>
+
+    <div class="slider" id="slider5">
+
+        <div class="card">
+            <a href="product.html?name=Stone Charm Eyewear&price=449&image=images/accessories 1.jpg&category=accessories">
+                <img src="images/accessories 1.jpg">
+            </a>
+            <h3>Stone Charm Eyewear</h3>
+            <p class="price">₹449</p>
+            <button onclick="handleAddToCart('Stone Charm Eyewear',449,'images/accessories 1.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Stylish Chain&price=499&image=images/accessories 3.jpg&category=accessories">
+                <img src="images/accessories 3.jpg">
+            </a>
+            <h3>Stylish Chain</h3>
+            <p class="price">₹499</p>
+            <button onclick="handleAddToCart('Stylish Chain',499,'images/accessories 3.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Cleaning Kit&price=249&image=images/accessories 2.jpg&category=accessories">
+                <img src="images/accessories 2.jpg">
+            </a>
+            <h3>Cleaning Kit</h3>
+            <p class="price">₹249</p>
+            <button onclick="handleAddToCart('Cleaning Kit',249,'images/accessories 2.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Stylish Eye Piece&price=299&image=images/accessories 4.jpg&category=accessories">
+                <img src="images/accessories 4.jpg">
+            </a>
+            <h3>Stylish Eye Piece</h3>
+            <p class="price">₹299</p>
+            <button onclick="handleAddToCart('Stylish Eye Piece',299,'images/accessories 4.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Silver Eye Piece&price=299&image=images/accessories 5.jpg&category=accessories">
+                <img src="images/accessories 5.jpg">
+            </a>
+            <h3>Silver Eye Piece</h3>
+            <p class="price">₹299</p>
+            <button onclick="handleAddToCart('Silver Eye Piece',299,'images/accessories 5.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Pearl Chain Eyeframe&price=699&image=images/accessories 6.jpg&category=accessories">
+                <img src="images/accessories 6.jpg">
+            </a>
+            <h3>Pearl Chain Eyeframe</h3>
+            <p class="price">₹699</p>
+            <button onclick="handleAddToCart('Pearl Chain Eyeframe',699,'images/accessories 6.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <a href="product.html?name=Smart lens Cleaning Kit&price=149&image=images/accessories 7.jpg&category=accessories">
+                <img src="images/accessories 7.jpg">
+            </a>
+            <h3>Smart lens Cleaning Kit</h3>
+            <p class="price">₹149</p>
+            <button onclick="handleAddToCart('Smart lens Cleaning Kit',149,'images/accessories 7.jpg')">Add to Cart</button>
+        </div>
+
+
+        <!-- Add more cards -->
+
+    </div>
+
+    <button class="slide-btn right" onclick="slideRight('slider5')">❯</button>
+
+</div>
+
+        <!-- Add more cards -->
+
+   
+    <!-- Add all other products -->
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
